@@ -9,7 +9,7 @@ from streamlit_option_menu import option_menu # type: ignore
 load_dotenv()  # Load all our environment variables
 
 def get_gemini_pro():
-    genai.configure(api_key="AIzaSyDuSXCV2lmkL5XWYZ_CpWv2kPbgCe8S84A")
+    genai.configure(api_key="") # Upload the API Key here
     return genai.GenerativeModel('gemini-pro')
 
 def pdf_to_text(pdf_file):
